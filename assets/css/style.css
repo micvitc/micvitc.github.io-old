@@ -1116,7 +1116,8 @@ only screen and (max-width: 760px),
 }
 
 .title-black {
-  color: black;
+  color: #01036f;
+
 }
 
 @media all and (max-width: 500px) {
