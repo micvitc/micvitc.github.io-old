@@ -32,13 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #preloader {
   position: fixed;
-  top: 0;MIC conducts various events to effectively connect with the student community and to provide the student communitiy with an engaging way to learn. We also conduct regular hackathons and collaborate with various other student clubs to conduct exciting events .
-
-Currently there are no upcoming events scheduled please check back later :)
-
-To learn More about our events Check out our Events page
-
-
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -663,7 +657,6 @@ section {
   font-family: "Poppins", sans-serif;
   color:rgba(2, 5, 161, 0.91);
   text-align: center;
-  text-decoration: underline rgba(2, 5, 161, 0.91);
   position: absolute;
   left: 0%;
   right: -0.26%;
