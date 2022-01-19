@@ -733,7 +733,7 @@ section {
   margin-top: 100px;
 }
 
-.about .content h3 {
+.about .content h2 {
   font-weight: 600;
   font-size: 26px;
   color: #010483;
@@ -761,7 +761,7 @@ section {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
-.gallery h3 {
+.gallery h2 {
   font-weight: 600;
   font-size: 26px;
   color: #010483;
@@ -1445,4 +1445,14 @@ only screen and (max-width: 760px),
   #footer .footer-top .footer-info {
     margin: 20px 0 30px 0;
   }
+}
+
+
+.justified {
+  text-align: justify;
+}
+
+.fst-italic {
+  font-weight: bolder;
+  font-size: 1.25rem;
 }
