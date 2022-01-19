@@ -454,6 +454,10 @@ h1, h2, h3, h4, h5, h6 {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+#hero .hero-img img {
+  width: 100%;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -651,15 +655,13 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: white;
+  color:rgba(2, 5, 161, 0.91);
   text-align: center;
-  text-decoration: underline white;
   position: absolute;
   left: 0%;
   right: -0.26%;
   top: 0%;
   bottom: 80.27%;
-
 }
 
 /*--------------------------------------------------------------
@@ -759,10 +761,14 @@ section {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
+.gallery h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #010483;
+}
 .gallery .gallery-item {
   overflow: hidden;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+  padding-bottom: 15px;
 }
 
 .gallery .gallery-item img {
@@ -772,7 +778,6 @@ section {
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
 }
-
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -978,6 +983,82 @@ section {
   margin: 0 2px;
 }
 
+table {
+	width: 750px;
+	border-collapse: collapse;
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+	background: #eee;
+	}
+
+th {
+	background: #01036f;
+	color: white;
+	font-weight: bold;
+	}
+
+td, th {
+	padding: 10px;
+	border: 1px solid #ccc;
+	text-align: left;
+	font-size: 18px;
+	}
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table {
+	  	width: 100%;
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #ccc; }
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
 /*--------------------------------------------------------------
 # Past event
 --------------------------------------------------------------*/
@@ -1033,7 +1114,8 @@ section {
 }
 
 .title-black {
-  color: black;
+  color: #01036f;
+
 }
 
 @media all and (max-width: 500px) {
@@ -1042,12 +1124,62 @@ section {
     flex-direction: column;
   }
 }
+.coming-soon{
+  text-align: center;
+  color: #01036f;
+  font-family: arial;
+  font-size: 90px;
+  line-height: 90x;
+  letter-spacing: 15px;
+  text-shadow: 0 1px 0 #efefef,
+    0 2px 0 #efefef,
+    0 3px 0 #efefef,
+    0 4px 0 #efefef,
+    0 30px 5px rgba(0,0,0,.1);
+
+  animation: float 3s linear infinite;
+  animation-direction: alternate;
+  overflow: hidden;
+}
+
+@keyframes float {
+  from { transform: rotate(5deg); }
+  to { transform: rotate(-5deg); }
+}
+
+/*--------------------------------------------------------------
+# Values
+--------------------------------------------------------------*/
+.values .box {
+  padding: 30px;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+}
+.values .box img {
+  padding: 30px 50px;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.values .box h3 {
+  font-size: 24px;
+  color: #012970;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.values .box:hover {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+.values .box:hover img {
+  transform: scale(1);
+}
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  background: linear-gradient(123.76deg, #03045E 8.97%, #0077B6 86.95%);
+  background:white;
 }
 
 .contact .info-box {
@@ -1187,6 +1319,7 @@ section {
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
+  margin-top: 30px;
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
@@ -1310,6 +1443,6 @@ section {
 }
 @media (max-width: 575px) {
   #footer .footer-top .footer-info {
-    margin: -20px 0 30px 0;
+    margin: 20px 0 30px 0;
   }
 }
