@@ -655,7 +655,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color:rgba(2, 5, 161, 0.91);
+  color: rgba(2, 5, 161, 0.91);
   text-align: center;
   position: absolute;
   left: 0%;
@@ -766,6 +766,7 @@ section {
   font-size: 26px;
   color: #010483;
 }
+
 .gallery .gallery-item {
   overflow: hidden;
   padding-bottom: 15px;
@@ -778,6 +779,7 @@ section {
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
 }
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -982,8 +984,9 @@ section {
   font-size: 16px;
   margin: 0 2px;
 }
+
 .cardup {
-    width: 400px;
+  width: 400px;
   height: 400px;
   perspective: 500px;
 }
@@ -992,14 +995,14 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
   transition: transform 1s;
   transform-style: preserve-3d;
 }
 
 .cardup:hover .contentup {
-  transform: rotateY( 180deg ) ;
+  transform: rotateY(180deg);
   transition: transform 0.5s;
 }
 
@@ -1020,85 +1023,87 @@ section {
 .back {
   background: #03446A;
   color: white;
-  transform: rotateY( 180deg );
+  transform: rotateY(180deg);
 }
 
 table {
-	width: 750px;
-	border-collapse: collapse;
-	margin:50px auto;
-	}
+  width: 750px;
+  border-collapse: collapse;
+  margin: 50px auto;
+}
 
 /* Zebra striping */
 tr:nth-of-type(odd) {
-	background: #eee;
-	}
+  background: #eee;
+}
 
 th {
-	background: #01036f;
-	color: white;
-	font-weight: bold;
-	}
+  background: #01036f;
+  color: white;
+  font-weight: bold;
+}
 
 td, th {
-	padding: 10px;
-	border: 1px solid #ccc;
-	text-align: left;
-	font-size: 18px;
-	}
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 18px;
+}
 
 /*
 Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
-@media
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
 
-	table {
-	  	width: 100%;
-	}
+  table {
+    width: 100%;
+  }
 
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr {
-		display: block;
-	}
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
 
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr {
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
 
-	tr { border: 1px solid #ccc; }
+  tr {
+    border: 1px solid #ccc;
+  }
 
-	td {
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee;
-		position: relative;
-		padding-left: 50%;
-	}
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
 
-	td:before {
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%;
-		padding-right: 10px;
-		white-space: nowrap;
-		/* Label the data */
-		content: attr(data-column);
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    /* Label the data */
+    content: attr(data-column);
 
-		color: #000;
-		font-weight: bold;
-	}
+    color: #000;
+    font-weight: bold;
+  }
 
 }
+
 /*--------------------------------------------------------------
 # Past event
 --------------------------------------------------------------*/
@@ -1164,7 +1169,8 @@ only screen and (max-width: 760px),
     flex-direction: column;
   }
 }
-.coming-soon{
+
+.coming-soon {
   text-align: center;
   color: #01036f;
   font-family: arial;
@@ -1175,7 +1181,7 @@ only screen and (max-width: 760px),
     0 2px 0 #efefef,
     0 3px 0 #efefef,
     0 4px 0 #efefef,
-    0 30px 5px rgba(0,0,0,.1);
+    0 30px 5px rgba(0, 0, 0, .1);
 
   animation: float 3s linear infinite;
   animation-direction: alternate;
@@ -1183,8 +1189,13 @@ only screen and (max-width: 760px),
 }
 
 @keyframes float {
-  from { transform: rotate(5deg); }
-  to { transform: rotate(-5deg); }
+  from {
+    transform: rotate(5deg);
+  }
+
+  to {
+    transform: rotate(-5deg);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1197,20 +1208,24 @@ only screen and (max-width: 760px),
   transition: 0.3s;
   height: 100%;
 }
+
 .values .box img {
   padding: 30px 50px;
   transition: 0.5s;
   transform: scale(1.1);
 }
+
 .values .box h3 {
   font-size: 24px;
   color: #012970;
   font-weight: 700;
   margin-bottom: 18px;
 }
+
 .values .box:hover {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 }
+
 .values .box:hover img {
   transform: scale(1);
 }
@@ -1219,7 +1234,7 @@ only screen and (max-width: 760px),
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  background:white;
+  background: white;
 }
 
 .contact .info-box {
@@ -1361,9 +1376,11 @@ only screen and (max-width: 760px),
   font-size: 14px;
   margin-top: 30px;
 }
+
 #footer .footer-top {
   padding: 60px 0 30px 0;
 }
+
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
   background: #010246;
@@ -1372,6 +1389,7 @@ only screen and (max-width: 760px),
   text-align: center;
   padding: 30px 20px;
 }
+
 #footer .footer-top .footer-info h3 {
   font-size: 24px;
   margin: 0 0 20px 0;
@@ -1379,12 +1397,14 @@ only screen and (max-width: 760px),
   line-height: 1;
   font-weight: 700;
 }
+
 #footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Montserrat", sans-serif;
 }
+
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -1398,11 +1418,13 @@ only screen and (max-width: 760px),
   height: 36px;
   transition: 0.3s;
 }
+
 #footer .footer-top .social-links a:hover {
   background: #1acc8d;
   color: #fff;
   text-decoration: none;
 }
+
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: 600;
@@ -1410,37 +1432,45 @@ only screen and (max-width: 760px),
   position: relative;
   padding-bottom: 12px;
 }
+
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
 }
+
 #footer .footer-top .footer-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
   color: #61ebba;
   font-size: 18px;
   line-height: 1;
 }
+
 #footer .footer-top .footer-links ul li {
   padding: 10px 0;
   display: flex;
   align-items: center;
 }
+
 #footer .footer-top .footer-links ul li:first-child {
   padding-top: 0;
 }
+
 #footer .footer-top .footer-links ul a {
   color: #fff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
+
 #footer .footer-top .footer-links ul a:hover {
   color: #4be8b0;
 }
+
 #footer .footer-top .footer-newsletter form {
   margin-top: 30px;
   background: #fff;
@@ -1448,11 +1478,13 @@ only screen and (max-width: 760px),
   position: relative;
   border-radius: 50px;
 }
+
 #footer .footer-top .footer-newsletter form input[type=email] {
   border: 0;
   padding: 4px;
   width: calc(100% - 110px);
 }
+
 #footer .footer-top .footer-newsletter form input[type=submit] {
   position: absolute;
   top: 0;
@@ -1467,20 +1499,24 @@ only screen and (max-width: 760px),
   transition: 0.3s;
   border-radius: 50px;
 }
+
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
   background: #149f6e;
 }
+
 #footer .copyright {
   border-top: 1px solid #010479;
   text-align: center;
   padding-top: 30px;
 }
+
 #footer .credits {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
   color: #fff;
 }
+
 @media (max-width: 575px) {
   #footer .footer-top .footer-info {
     margin: 20px 0 30px 0;

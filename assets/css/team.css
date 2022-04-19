@@ -2,188 +2,203 @@
 # Team
 --------------------------------------------------------------*/
 .team {
-    background: #fff;
-    padding: 60px 0;
+  background: #fff;
+  padding: 60px 0;
 }
+
 .team .member {
-    overflow: hidden;
-    text-align: center;
-    border-radius: 5px;
-    background: #fff;
-    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-    transition: 0.3s;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  transition: 0.3s;
 }
 
 .team .member .member-img {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .team .member .member-img:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    background: url(../img/team-shape.svg) no-repeat center bottom;
-    background-size: contain;
-    z-index: 1;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../img/team-shape.svg) no-repeat center bottom;
+  background-size: contain;
+  z-index: 1;
 }
 
 .team .member .social {
-    position: absolute;
-    right: -100%;
-    top: 30px;
-    opacity: 0;
-    border-radius: 4px;
-    transition: 0.5s;
-    background: rgba(255, 255, 255, 0.3);
-    z-index: 2;
+  position: absolute;
+  right: -100%;
+  top: 30px;
+  opacity: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 2;
 }
 
 .team .member .social a {
-    transition: color 0.3s;
-    color: rgba(1, 41, 112, 0.5);
-    margin: 15px 12px;
-    display: block;
-    line-height: 0;
-    text-align: center;
+  transition: color 0.3s;
+  color: rgba(1, 41, 112, 0.5);
+  margin: 15px 12px;
+  display: block;
+  line-height: 0;
+  text-align: center;
 }
 
 .team .member .social a:hover {
-    color: rgba(1, 41, 112, 0.8);
+  color: rgba(1, 41, 112, 0.8);
 }
 
 .team .member .social i {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .team .member .member-info {
-    padding: 10px 15px 20px 15px;
+  padding: 10px 15px 20px 15px;
 }
 
 .team .member .member-info h4 {
-    font-weight: 700;
-    margin-bottom: 5px;
-    font-size: 20px;
-    color: #012970;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #012970;
 }
 
 .team .member .member-info span {
-    display: block;
-    font-size: 14px;
-    font-weight: 400;
-    color: #aaaaaa;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaaaaa;
 }
 
 .team .member .member-info p {
-    font-style: italic;
-    font-size: 14px;
-    padding-top: 15px;
-    line-height: 26px;
-    color: #5e5e5e;
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 26px;
+  color: #5e5e5e;
 }
 
 .team .member:hover {
-    transform: scale(1.08);
-    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  transform: scale(1.08);
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
 
 .team .member:hover .social {
-    right: 8px;
-    opacity: 1;
+  right: 8px;
+  opacity: 1;
 }
+
 .pricing .box {
-    padding: 20px;
-    background: #fff;
-    text-align: center;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-  }
-  .pricing h3 {
-    font-weight: 400;
-    margin: -20px -20px 20px -20px;
-    padding: 20px 15px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #777777;
-    background: #f8f8f8;
-  }
-  .pricing h4 {
-    font-size: 36px;
-    color: #1acc8d;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 20px;
-  }
-  .pricing h4 sup {
-    font-size: 20px;
-    top: -15px;
-    left: -3px;
-  }
-  .pricing h4 span {
-    color: #bababa;
-    font-size: 16px;
-    font-weight: 300;
-  }
-  .pricing ul {
-    padding: 0;
-    list-style: none;
-    color: #444444;
-    text-align: center;
-    line-height: 20px;
-    font-size: 14px;
-  }
-  .pricing ul li {
-    padding-bottom: 16px;
-  }
-  .pricing ul i {
-    color: #1acc8d;
-    font-size: 18px;
-    padding-right: 4px;
-  }
-  .pricing ul .na {
-    color: #ccc;
-    text-decoration: line-through;
-  }
-  .pricing .btn-wrap {
-    margin: 20px -20px -20px -20px;
-    padding: 20px 15px;
-    background: #f8f8f8;
-    text-align: center;
-  }
-  .pricing .btn-buy {
-    background: #1acc8d;
-    display: inline-block;
-    padding: 8px 35px 10px 35px;
-    border-radius: 50px;
-    color: #fff;
-    transition: none;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    transition: 0.3s;
-  }
-  .pricing .btn-buy:hover {
-    background: #149f6e;
-  }
-  .pricing .featured h3 {
-    color: #fff;
-    background: #1acc8d;
-  }
-  .pricing .advanced {
-    width: 200px;
-    position: absolute;
-    top: 18px;
-    right: -68px;
-    transform: rotate(45deg);
-    z-index: 1;
-    font-size: 14px;
-    padding: 1px 0 3px 0;
-    background: #1acc8d;
-    color: #fff;
-  }
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing h3 {
+  font-weight: 400;
+  margin: -20px -20px 20px -20px;
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #777777;
+  background: #f8f8f8;
+}
+
+.pricing h4 {
+  font-size: 36px;
+  color: #1acc8d;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.pricing h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.pricing h4 span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #444444;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.pricing ul li {
+  padding-bottom: 16px;
+}
+
+.pricing ul i {
+  color: #1acc8d;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.pricing ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.pricing .btn-wrap {
+  margin: 20px -20px -20px -20px;
+  padding: 20px 15px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.pricing .btn-buy {
+  background: #1acc8d;
+  display: inline-block;
+  padding: 8px 35px 10px 35px;
+  border-radius: 50px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing .btn-buy:hover {
+  background: #149f6e;
+}
+
+.pricing .featured h3 {
+  color: #fff;
+  background: #1acc8d;
+}
+
+.pricing .advanced {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: #1acc8d;
+  color: #fff;
+}

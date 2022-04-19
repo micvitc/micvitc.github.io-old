@@ -6,122 +6,124 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.blogtit{
-    margin: 0;
-    margin: 0;
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color: #01036f;
-    text-align: center;
-    text-decoration: underline #01036f;
-    position: absolute;
-    left: 0%;
-    right: -0.26%;
-    top: 0%;
-    bottom: 80.27%;
+.blogtit {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #01036f;
+  text-align: center;
+  text-decoration: underline #01036f;
+  position: absolute;
+  left: 0%;
+  right: -0.26%;
+  top: 0%;
+  bottom: 80.27%;
 }
 
 .blogbod {
-    font-family: "Quicksand", sans-serif;
-    display: grid;
-    place-items: center;
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  place-items: center;
 }
 
 .blogcont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin-block: 2rem;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
 }
 
 .card__image {
-    max-width: 100%;
-    display: block;
-    object-fit: cover;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .cards {
-    display: flex;
-    flex-direction: column;
-    width: clamp(20rem, calc(20rem + 2vw), 22rem);
-    overflow: hidden;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
-    border-radius: 1em;
-    background: #ECE9E6;
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 }
 
 .cards__body {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }
 
 .tag {
-    align-self: flex-start;
-    padding: .25em .75em;
-    border-radius: 1em;
-    font-size: .75rem;
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
 }
 
 .tag+.tag {
-    margin-left: .5em;
+  margin-left: .5em;
 }
 
 .tag-blue {
-    background: #56CCF2;
-    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
-    color: #fafafa;
+  background: #56CCF2;
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
 }
 
 .tag-brown {
-    background: #D1913C;
-    background: linear-gradient(to bottom, #FFD194, #D1913C);
-    color: #fafafa;
+  background: #D1913C;
+  background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
 }
 
 .tag-red {
-    background: #cb2d3e;
-    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
-    color: #fafafa;
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
 }
 
 .cards__body h4 {
-    font-size: 1.5rem;
-    text-transform: capitalize;
+  font-size: 1.5rem;
+  text-transform: capitalize;
 }
 
 .cards__footer {
-    display: flex;
-    padding: 1rem;
-    margin-top: auto;
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
 }
 
 .user {
-    display: flex;
-    gap: .5rem;
+  display: flex;
+  gap: .5rem;
 }
 
 .user__image {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .user__info>small {
-    color: #666;
+  color: #666;
 }
-.events h3{
-  color:#01036f;
+
+.events h3 {
+  color: #01036f;
 }
+
 /*--------------------------------------------------------------
 #Upcoming Event Cards
 --------------------------------------------------------------*/
@@ -152,6 +154,7 @@
   border-radius: 30px;
 
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -160,7 +163,7 @@
 }
 
 body {
-  background-color:white;
+  background-color: white;
 }
 
 .content-wrapper {
@@ -190,120 +193,124 @@ body {
 
 @media (min-width: 900px) {
 
-.news-card {
+  .news-card {
     height: 20rem
-}
   }
+}
 
 .news-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);;
-      z-index: 0;
-    }
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);
+  ;
+  z-index: 0;
+}
 
 .news-card__card-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-/*     background: rgba(255,0,0,.5); */
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /*     background: rgba(255,0,0,.5); */
+}
 
 .news-card__image {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    transition: transform 3s ease;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    position: relative;
-    z-index: -1;
-  }
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 3s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  z-index: -1;
+}
 
 .news-card__text-wrapper {
-    position: absolute;
-    bottom: 0rem;
-    padding: 1rem;
-    color: white;
-/*     background-color: rgba(0, 0, 0, 0.4); */
-    transition: background-color 1.5s ease;
-  }
+  position: absolute;
+  bottom: 0rem;
+  padding: 1rem;
+  color: white;
+  /*     background-color: rgba(0, 0, 0, 0.4); */
+  transition: background-color 1.5s ease;
+}
 
 .news-card__title {
-    transition: color 1s ease;
-    margin-bottom: .5rem;
-  }
+  transition: color 1s ease;
+  margin-bottom: .5rem;
+}
 
 .news-card__post-name {
-    font-size: .7rem;
-    margin-bottom: .5rem;
-    padding-left: 5px;
-    color: #CCC;
-  }
+  font-size: .7rem;
+  margin-bottom: .5rem;
+  padding-left: 5px;
+  color: #CCC;
+}
 
 .news-card__details-wrapper {
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 1.5s ease, opacity 1s ease;
-  }
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 1.5s ease, opacity 1s ease;
+}
 
 @media (min-width: 900px) {
-    .news-card:hover .news-card__details-wrapper {
-      max-height: 20rem;
-      opacity: 1;
-    }
-    .news-card:hover .news-card__text-wrapper {
-      background-color: rgba(0, 0, 0, 0.6);
-    }
-    .news-card:hover .news-card__title {
-      color: yellow;
-    }
-    .news-card:hover .news-card__image {
-      transform: scale(1.2);
-      z-index: -1;
-    }
+  .news-card:hover .news-card__details-wrapper {
+    max-height: 20rem;
+    opacity: 1;
   }
+
+  .news-card:hover .news-card__text-wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .news-card:hover .news-card__title {
+    color: yellow;
+  }
+
+  .news-card:hover .news-card__image {
+    transform: scale(1.2);
+    z-index: -1;
+  }
+}
 
 .news-card__excerpt {
-    font-weight: 300;
-  }
+  font-weight: 300;
+}
 
 .news-card__read-more {
-    background: black;
-    color: #bbb;
-    display: block;
-    padding: 0.4rem 0.6rem;
-    border-radius: 0.3rem;
-    margin-top: 1rem;
-    border: 1px solid #444;
-    font-size: 0.8rem;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    text-decoration: none;
-    width: 7rem;
-    margin-left: auto;
-    position: relative;
-    z-index: 5;
-  }
+  background: black;
+  color: #bbb;
+  display: block;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  border: 1px solid #444;
+  font-size: 0.8rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-decoration: none;
+  width: 7rem;
+  margin-left: auto;
+  position: relative;
+  z-index: 5;
+}
 
 .news-card__read-more i {
-      position: relative;
-      left: 0.2rem;
-      color: #888;
-      transition: left 0.5s ease, color 0.6s ease;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-    }
+  position: relative;
+  left: 0.2rem;
+  color: #888;
+  transition: left 0.5s ease, color 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
 .news-card__read-more:hover i {
-      left: 0.5rem;
-      color: yellow;
-    }
+  left: 0.5rem;
+  color: yellow;
+}
