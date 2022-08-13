@@ -1,6 +1,3 @@
-/*--------------------------------------------------------------
-# Blogs
---------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 *,
@@ -11,37 +8,6 @@
   margin: 0;
 }
 
-.blogtit {
-  margin: 0;
-  margin: 0;
-  font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #01036f;
-  text-align: center;
-  text-decoration: underline #01036f;
-  position: absolute;
-  left: 0%;
-  right: -0.26%;
-  top: 0%;
-  bottom: 80.27%;
-}
-
-.blogbod {
-  font-family: "Quicksand", sans-serif;
-  display: grid;
-  place-items: center;
-}
-
-.blogcont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  margin-block: 2rem;
-  gap: 2rem;
-}
 
 .card__image {
   max-width: 100%;
